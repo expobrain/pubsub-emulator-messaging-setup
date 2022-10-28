@@ -5,26 +5,26 @@ fmt:
 		-exec pyupgrade \
 			--exit-zero-even-if-changed \
 			--keep-runtime-typing \
-			--py310-plus \
+			--py37-plus \
 			{} \+ 1> /dev/null
 	autoflake \
 		--in-place \
 		--remove-all-unused-imports \
 		--ignore-init-module-imports \
 		-r \
-		<project-name> tests
+		pubsub_emulator_messaging_setup tests
 	isort --profile black .
 	black .
 
 bandit:
-	bandit -q -r <project-name>
+	bandit -q -r pubsub_emulator_messaging_setup
 	bandit -q -lll -r tests
 
 check: bandit
 	find . -type d -name ".venv" -prune -o -print -type f -name "*.py" \
 		-exec pyupgrade \
 			--keep-runtime-typing \
-			--py310-plus \
+			--py37-plus \
 			{} \+ 1> /dev/null
 	autoflake \
 		--in-place \
@@ -32,13 +32,25 @@ check: bandit
 		--ignore-init-module-imports \
 		-r \
 		-c \
-		<project-name> tests
+		pubsub_emulator_messaging_setup tests
 	isort --profile black -c .
 	black --check .
 
 lint: bandit
-	mypy <project-name>
+	mypy pubsub_emulator_messaging_setup
 	flake8 .
 
 test:
-	pytest -x --cov=core --cov=<project-name> --cov-fail-under=90
+	pytest -x --cov=core --cov=pubsub_emulator_messaging_setup --cov-fail-under=89
+
+compose:
+	docker-compose up --build
+
+compose_up:
+	docker-compose up -d --build
+
+compose_down:
+	docker-compose down
+
+install:
+	poetry install --sync
