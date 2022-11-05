@@ -14,7 +14,7 @@ skip_glob = ".venv"
 
 [tool.poetry]
 name = "pubsub-emulator-messaging-setup"
-version = "0.1.0dev0"
+version = "0.1.0dev1"
 description = "CLI tool to setup topics and subscriptions on a PubSub emulator from a definition in a YAML file"
 repository = "https://github.com/expobrain/pubsub-emulator-messaging-setup"
 authors = ["Daniele Esposti <daniele.esposti@gmail.com>"]
