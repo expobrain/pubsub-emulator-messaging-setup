@@ -413,14 +413,14 @@ reauth = ["pyu2f (>=0.1.5)"]
 
 [[package]]
 name = "google-cloud-pubsub"
-version = "2.14.0"
+version = "2.14.1"
 description = "Google Cloud Pub/Sub API client library"
 category = "main"
 optional = false
 python-versions = ">=3.7"
 files = [
-    {file = "google-cloud-pubsub-2.14.0.tar.gz", hash = "sha256:e2714f07b750458beaf5b07b670ea7b6058ee155c021c987d0b8e6a40bf3446f"},
-    {file = "google_cloud_pubsub-2.14.0-py2.py3-none-any.whl", hash = "sha256:a035d63ef209a28edd54c8c1fcf66cc25b207ed6edb1259a973b909c723ecf80"},
+    {file = "google-cloud-pubsub-2.14.1.tar.gz", hash = "sha256:28b3c62021b04f78f9158c157dbfcaebe9ffb504edd2975ad0f228ebf0204c6f"},
+    {file = "google_cloud_pubsub-2.14.1-py2.py3-none-any.whl", hash = "sha256:d73a24ddfa49aaae17959ecb987ff92ee7ba0535dc5dbc10ce22136588ccaa09"},
 ]
 
 [package.dependencies]
