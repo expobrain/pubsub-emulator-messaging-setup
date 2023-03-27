@@ -1083,14 +1083,14 @@ dev = ["pre-commit", "pytest-asyncio", "tox"]
 
 [[package]]
 name = "pytest-testmon"
-version = "1.4.5"
+version = "2.0.2"
 description = "selects tests affected by changed files and methods"
 category = "dev"
 optional = false
-python-versions = "<3.12,>=3.7"
+python-versions = ">=3.7"
 files = [
-    {file = "pytest-testmon-1.4.5.tar.gz", hash = "sha256:6fbbc63fb2d56b64d70197cae2ecbcf8074f81a1a174944a829b29f24ca2603d"},
-    {file = "pytest_testmon-1.4.5-py3-none-any.whl", hash = "sha256:313424d868c0924596f710d49506c554dce78be85b96553a433141626e870ef1"},
+    {file = "pytest-testmon-2.0.2.tar.gz", hash = "sha256:cd364f6fdc446b0d94b1efe7b1bea0919348177e1dca0d3b06123ece621bffec"},
+    {file = "pytest_testmon-2.0.2-py3-none-any.whl", hash = "sha256:500d24a498460f421d6dfb13c722764c3079ac9f72a916e86701f025b7dc6d37"},
 ]
 
 [package.dependencies]
@@ -1418,4 +1418,4 @@ testing = ["flake8 (<5)", "func-timeout", "jaraco.functools", "jaraco.itertools"
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.7,<3.12"
-content-hash = "8b02e662aea2d0a30110a12a00f506415dfe4bc923d99a88c2363406148a3c4e"
+content-hash = "da42123479eb16199e009fa11d56c4c240b3fce6ee214f6b531588bf66b7dd66"
