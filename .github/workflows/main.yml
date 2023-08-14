@@ -33,7 +33,7 @@ jobs:
       - run: pip install poetry
       - run: poetry config virtualenvs.in-project true
       - run: poetry install
-      - uses: isbang/compose-action@v1.5.0
+      - uses: isbang/compose-action@v1.5.1
       - run: poetry run make test
       - run: poetry run make check
 
