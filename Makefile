@@ -5,7 +5,7 @@ fmt:
 		-exec pyupgrade \
 			--exit-zero-even-if-changed \
 			--keep-runtime-typing \
-			--py37-plus \
+			--py38-plus \
 			{} \+ 1> /dev/null
 	autoflake \
 		--in-place \
@@ -24,7 +24,7 @@ check: bandit
 	find . -type d -name ".venv" -prune -o -print -type f -name "*.py" \
 		-exec pyupgrade \
 			--keep-runtime-typing \
-			--py37-plus \
+			--py38-plus \
 			{} \+ 1> /dev/null
 	autoflake \
 		--in-place \
